@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -38,4 +38,19 @@ body {
 
 .form-element label {
     font-size: 0.8rem;
+}
+
+.submit {
+    margin: 0;
+}
+
+.submit button{
+    color: aquamarine;
+    background-color: rebeccapurple;
+    font-size: 0.8rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    padding: 16px;
+    margin: auto;
 }
