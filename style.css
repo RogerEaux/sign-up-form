@@ -5,7 +5,6 @@
 }
 
 body {
-    height: 100vh;
     color: #505050;
     background-color: lavender;
 }
@@ -92,9 +91,22 @@ body {
     margin: auto;
 }
 
+.fake-form-footer {
+    width: 80%;
+    margin: 48px auto;
+    font-size: 1.3rem;
+}
+
+.fake-form-footer a {
+    text-decoration: none;
+    font-weight: 900;
+    color: rebeccapurple;
+}
+
 @media (min-width: 600px) {
     body {
         display: flex;
+        height: 100vh;
     }
 
     .hero {
