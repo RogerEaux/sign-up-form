@@ -9,22 +9,45 @@ body {
     background-color: lavender;
 }
 
+.hero {
+    width: 100%;
+    height: 75vh;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.hero-title {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    background-color: black;
+    color: aquamarine;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    opacity: 0.7;
+    padding: 12px;
+}
+
 .fake-form {
     margin: 24px auto;
     width: 80%;
     background-color: aliceblue;
     border: 1px solid aquamarine;
     border-radius: 3px;
-    padding: 36px;
+    padding: 32px;
     margin-bottom: 48px;
+    margin-top: 48px;
 }
 
 .form-element {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 30px;
-    gap: 8px;
+    margin-bottom: 32px;
+    gap: 6px;
 }
 
 .form-element input {
@@ -53,4 +76,19 @@ body {
     border-radius: 3px;
     padding: 16px;
     margin: auto;
+}
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+    }
+
+    .hero {
+        flex: 1;
+        height: initial;
+    }
+
+    .content {
+        flex: 1;
+    }
 }
