@@ -85,10 +85,15 @@ body {
 
     .hero {
         flex: 1;
-        height: initial;
+        height: auto;
     }
 
     .content {
         flex: 1;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 15%;
     }
 }
