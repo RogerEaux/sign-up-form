@@ -20,7 +20,7 @@ body {
 
 .hero-title {
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     width: 100%;
     background-color: black;
     color: aquamarine;
@@ -113,10 +113,6 @@ body {
         flex: 2;
         height: auto;
         background-size: cover;
-    }
-
-    .hero-title {
-        top: 35vh;
     }
 
     .content {
