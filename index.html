@@ -14,7 +14,11 @@
         </div>
 
         <div class="content">
-            <header></header>
+            <header class="fake-form-header">
+                <p>This is not a real service. You just <em>know</em> you need something like this in
+                your life. Why keep waiting. Sign up this instant.</p>
+                <p>You know you want to</p>
+            </header>
 
             <form action="./index.html" method="get" class="fake-form">
                 <div class="form-row">
@@ -37,7 +41,7 @@
 
                     <div class="form-element">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" minlength="10" maxlength="10">
                     </div>
                 </div>
 
@@ -58,7 +62,9 @@
                 </div>
             </form>
 
-            <footer></footer>
+            <footer>
+                
+            </footer>
         </div>
     </body>
 </html>
