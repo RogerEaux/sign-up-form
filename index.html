@@ -26,38 +26,40 @@
             <form action="./index.html" method="get" class="fake-form">
                 <div class="form-row">
                     <div class="form-element">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="firstName" placeholder="Dog">
+                        <label for="first-name">FIRST NAME*</label>
+                        <input type="text" id="first-name" name="firstName" placeholder="Dog" required>
                     </div>
 
                     <div class="form-element">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="lastName" placeholder="Goodboy">
+                        <label for="last-name">LAST NAME*</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Goodboy" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-element">
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" placeholder="example@example.com">
+                        <label for="email">EMAIL*</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
                     </div>
 
                     <div class="form-element">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone" minlength="10" maxlength="10">
+                        <input type="tel" id="phone" name="phone" minlength="10" maxlength="10" 
+                        placeholder="10 digits">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-element">
-                        <label for="password">PASSWORD</label>
+                        <label for="password">PASSWORD*</label>
                         <input type="password" id="password" name="password" minlength="6" 
-                        placeholder="Must be longer than 6 characters">
+                        placeholder="Longer than 6 characters" required>
                     </div>
 
                     <div class="form-element">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirmPassword">
+                        <label for="confirm-password">CONFIRM PASSWORD*</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" 
+                        minlength="6" placeholder="Longer than 6 characters" required>
                     </div>
                 </div>
 
