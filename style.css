@@ -129,6 +129,28 @@ body {
     border: 2px solid rebeccapurple;
 }
 
+.form-element input:invalid + span::after {
+    position: absolute;
+    font-size: 0.7rem;
+    color: crimson;
+}
+
+.form-element input[type="email"]:invalid + span::after {
+    content: "Please enter a valid email";
+}
+
+.form-element input[type="password"]:invalid + span::after {
+    content: "Must be longer than 6 characters";
+}
+
+.form-element input[type="tel"]:invalid + span::after {
+    content: "Please enter a valid phone number";
+}
+
+.form-element input:invalid:placeholder-shown + span::after {
+    content : "";
+}
+
 @media (min-width: 600px) {
     body {
         display: flex;
