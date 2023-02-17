@@ -129,6 +129,7 @@ body {
     border: 2px solid rebeccapurple;
 }
 
+.form-element .not-match::after,
 .form-element input:invalid + span::after {
     position: absolute;
     font-size: 0.7rem;
@@ -149,6 +150,10 @@ body {
 
 .form-element input:invalid:placeholder-shown + span::after {
     content : "";
+}
+
+.form-element .not-match::after {
+    content: "Passwords do not match";
 }
 
 @media (min-width: 600px) {
