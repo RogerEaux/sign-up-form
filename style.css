@@ -100,6 +100,14 @@ body {
     margin: auto;
 }
 
+.submit button:hover {
+    background-color: #8653b9;
+}
+
+.submit button:active{
+    background-color: #461379;
+}
+
 .fake-form-footer {
     width: 80%;
     margin: 48px auto;
