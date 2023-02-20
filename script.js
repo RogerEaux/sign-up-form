@@ -1,7 +1,7 @@
 function checkMatch(){
-    password = document.getElementById('password');
-    confirmPassword = document.getElementById('confirm-password');
-    warning = document.querySelector('.form-element #password + span');
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirm-password');
+    const warning = document.querySelector('.form-element #password + span');
 
     if(password.value != confirmPassword.value){
         warning.classList.add('not-match');
@@ -15,8 +15,8 @@ function checkMatch(){
 }
 
 function setup(){
-    password = document.getElementById('password');
-    confirmPassword = document.getElementById('confirm-password');
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirm-password');
 
     password.addEventListener('input', checkMatch);
     confirmPassword.addEventListener('input', checkMatch);
